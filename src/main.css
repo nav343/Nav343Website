@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+   width: 0px;
+}
+
+.wavething {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavething svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 134px;
+}
+
+.wavething .shape-fill {
+    fill: #3488F2;
+}
+
