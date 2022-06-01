@@ -25,8 +25,11 @@ export default function Cursor({ setMousePosition, mousePosition, cursorVariant 
       width: 150,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
-      backgroundColor: "#A926F9",
-      mixBlendMode: "overlay"
+      backgroundColor: "white",
+      borderRadius: 100,
+      borderColor: 'white',
+      borderWidth: 2,
+      opacity: 0.2
     }
   }
 
