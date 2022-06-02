@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cursor from "../components/All/cursor";
 import '../main.css'
 import Logo from '../assets/icon.png'
+import Avatar from '../assets/avatar.png'
 import CmdBot from '../assets/CmdBot.png'
 import SpaceApp from '../assets/SpaceApp.png'
 import Tilt from 'react-tilt'
@@ -34,7 +35,7 @@ export default function Home() {
     <motion.div onClick={mouseClick} onDoubleClick={mouseLeave} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       {/*<div className="sticky bg-gray-500 w-1 h-2 rounded-full right-20 z-50" style={{ top: window.scrollY }}></div>*/}
 
-      <div id="navbar" className="backdrop-blur-sm w-screen flex justify-between items-center fixed top-0 z-50 px-10 py-2 flex-col sm:flex-row">
+      <div id="navbar" className="backdrop-blur-sm w-screen flex justify-between items-center absolute sm:fixed top-0 z-50 px-10 py-2 flex-col sm:flex-row">
         <div className="flex items-center">
           <img src={Logo} className="w-12 h-12" />
           <h1 className="text-white font-bold text-xl ml-2">Nav343</h1>
@@ -77,7 +78,7 @@ export default function Home() {
             <img src={SpaceApp} className="w-fit h-96 rounded-xl" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} draggable={false} />
             <div className="mt-10 sm:mt-0">
               <h1 className="text-white font-bold ml-5 text-3xl text-center sm:text-right" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Space App</h1>
-              <p className="text-white text-xl ml-5 text-center sm:text-right" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>A mobile app made for kids to learn about our Solar System and the Planets. It is made using React Native and works on both IOS and Android with Expo Cli. Also it was my first React Native app and my first mobile app too :)</p>
+              <p className="text-white text-xl ml-7 text-center sm:text-right" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>A mobile app made for kids to learn about our Solar System and the Planets. It is made using React Native and works on both IOS and Android with Expo Cli. Also it was my first React Native app and my first mobile app too :)</p>
             </div>
           </div>
         </div>
@@ -89,15 +90,15 @@ export default function Home() {
         </svg>
 
         <div className="flex items-center justify-center mt-10 flex-col">
-          <img src="https://via.placeholder.com/150" className="rounded-full" />
+          <img src={Avatar} className="rounded-full w-36 h-36" />
 
           <h1 className="text-white font-bold text-4xl my-5" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>About Me</h1>
-          <p className="text-white text-center text-xl mx-0 sm:mx-24" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Hi there, I am Navaneeth K, an early programmer (currently 14), I mostly use Python and Javascript. The first language that I learnt was Python. I have made over 10 projects individually as well as in team (I mostly like making it on my own :D).</p>
+          <p className="text-white text-center text-xl mx-5 sm:mx-24" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Hi there, I am Navaneeth K, an early programmer (currently 14), I mostly use Python and Javascript. The first language that I learnt was Python. I have made over 10 projects individually as well as in team (I mostly like making it on my own :D).</p>
         </div>
 
       </div>
 
-      <div className="flex items-center justify-evenly bg-gradient-to-r from-sky-500 to-indigo-500 py-2">
+      <div className="flex items-center justify-evenly bg-gradient-to-r from-sky-500 to-indigo-500 py-2 flex-col sm:flex-row">
         <div className="flex items-center justify-center">
           <img src={Logo} className="w-12 h-12" />
           <h1 className="text-white font-bold text-xl ml-2">Nav343</h1>
@@ -109,7 +110,7 @@ export default function Home() {
           <h1>Nav343</h1>
         </div>
 
-        <div className="flex items-center justify-between w-32 cursor-none" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+        <div className="flex items-center justify-between w-32 cursor-none mt-2 sm:mt-0" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
           <a href="https://github.com/nav343" target={"_blank"}><FaGithub fill="white" size={27} /></a>
           <h1 className="cursor-not-allowed"><FaFacebook fill="white" size={27} /></h1>
           <h1 className="cursor-not-allowed"><FaTwitter fill="white" size={27} /></h1>
@@ -119,4 +120,3 @@ export default function Home() {
     </motion.div>
   )
 }
-
