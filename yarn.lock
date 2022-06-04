@@ -2000,6 +2000,11 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
+"@types/scrollmagic@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/scrollmagic/-/scrollmagic-2.0.2.tgz#04e5bf57cdbe395545650514400a889deb78bd02"
+  integrity sha512-KdJ25qSLo6fv0O2jMe7hX6Kwsd0T3vRv6uWtdrDTsJsfq0DaO3T7WhXd7eB02TezxzLIRMp5qxV7YdI8A5J++g==
+
 "@types/serve-index@^1.9.1":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@types/serve-index/-/serve-index-1.9.1.tgz#1b5e85370a192c01ec6cec4735cf2917337a6278"
