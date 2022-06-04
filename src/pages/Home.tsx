@@ -14,8 +14,6 @@
 import { useState } from "react";
 import '../main.css'
 import { motion } from 'framer-motion'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import Navbar from "../components/Home/navbar";
 import MainBody from "../components/Home/main-body";
 import Works from "../components/Home/works";
@@ -29,9 +27,6 @@ import ToolsAndLangs from "../components/Home/tools-and-lang";
   * Defining the variants for framer-motion cursor*/
 export default function Home() {
   document.title = 'Nav343 - Home'
-  AOS.init({
-    disable: 'mobile'
-  })
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
