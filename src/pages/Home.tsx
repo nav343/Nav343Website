@@ -2,8 +2,7 @@
 * Modules:
   * useState from react
   * motion from framer-motion
-  * AOS from aos
-  * and the AOS css file 
+  * AOS removed !!!
 * Files/Components 
   * Navbar
   * MainBody
@@ -13,7 +12,7 @@
   * Footer*/
 import { useState } from "react";
 import '../main.css'
-import { motion } from 'framer-motion'
+import { motion, Reorder } from 'framer-motion'
 import Navbar from "../components/Home/navbar";
 import MainBody from "../components/Home/main-body";
 import Works from "../components/Home/works";
@@ -22,7 +21,7 @@ import Footer from "../components/Home/footer";
 import ToolsAndLangs from "../components/Home/tools-and-lang";
 
 /* Exporting the default Home function. 
-  * Setting the title of the page and initializing AOS
+  * Setting the title of the page
   * creating an object state (for the cursor) using useState containing x and y positions (default to 0)
   * Defining the variants for framer-motion cursor*/
 export default function Home() {

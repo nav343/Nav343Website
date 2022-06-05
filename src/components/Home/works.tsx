@@ -4,7 +4,7 @@ import MouseMotion2 from '../../types/MouseMotion2'
 
 export default function Works({ mouseEnter, mouseLeave }: MouseMotion2) {
   return (
-    <div className="h-full w-screen from-cyan-500 to-blue-500 flex flex-col items-center justify-between" style={{ background: "#3488f2" }}>
+    <div id="works" className="h-full w-screen from-cyan-500 to-blue-500 flex flex-col items-center justify-between" style={{ background: "#3488f2" }}>
       <h1 className="font-bold text-white text-4xl" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>My Works</h1>
 
       <div className="mt-10 px-10 sm:px-20">
