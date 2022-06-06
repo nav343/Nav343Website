@@ -2,9 +2,12 @@ import Logo from '../../assets/icon.png'
 import { FaCopyright, FaFacebook, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa'
 import MouseMotion2 from '../../types/MouseMotion2'
 
+{ /* Old Color Theme:
+     * bg-gradient-to-r from-purple-500 to-pink-500 */ }
+
 export default function Footer({ mouseEnter, mouseLeave }: MouseMotion2) {
   return (
-    <div className="flex items-center justify-evenly bg-gradient-to-r from-purple-500 to-pink-500 py-2 flex-col sm:flex-row">
+    <div className="flex items-center justify-evenly bg-gray-900 py-2 flex-col sm:flex-row">
       <div className="flex items-center justify-center">
         <img src={Logo} className="w-12 h-12" />
         <h1 className="text-white font-bold text-xl ml-2">Nav343</h1>

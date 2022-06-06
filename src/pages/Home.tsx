@@ -12,7 +12,7 @@
   * Footer*/
 import { useState } from "react";
 import '../main.css'
-import { motion, Reorder } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Navbar from "../components/Home/navbar";
 import MainBody from "../components/Home/main-body";
 import Works from "../components/Home/works";

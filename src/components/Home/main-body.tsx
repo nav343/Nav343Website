@@ -2,19 +2,11 @@ import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 import Cursor from '../All/cursor'
 import Logo from '../../assets/icon.png'
-import React, { MouseEventHandler } from 'react'
-
-type AMixType = {
-  setMousePosition: React.Dispatch<React.SetStateAction<{ x: number, y: number }>>,
-  cursorVariant: string,
-  mousePosition: { x: number, y: number },
-  mouseEnter: MouseEventHandler<HTMLHeadingElement>,
-  mouseLeave: MouseEventHandler<HTMLHeadingElement>,
-}
+import AMixType from '../../types/AMixType'
 
 export default function MainBody({ setMousePosition, cursorVariant, mousePosition, mouseEnter, mouseLeave }: AMixType) {
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-screen flex items-center justify-center relative">
+    <div className="dark:bg-gray-900 h-screen flex items-center justify-center relative">
       <div className="flex items-center flex-col">
         <Tilt className="Tilt" options={{ max: 15, scale: 1.5 }} >
           <img src={Logo} alt='Logo' className="w-32 h-32 -mt-10" />
