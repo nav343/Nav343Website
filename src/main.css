@@ -25,3 +25,11 @@ body::-webkit-scrollbar {
 .wavething .shape-fill {
     fill: #3488F2;
 }
+
+#main_logo {
+    background-image: url(https://images.pexels.com/photos/6221199/pexels-photo-6221199.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+}

@@ -11,7 +11,7 @@ export default function MainBody({ setMousePosition, cursorVariant, mousePositio
         <Tilt className="Tilt" options={{ max: 15, scale: 1.5 }} >
           <img src={Logo} alt='Logo' className="w-32 h-32 -mt-10" />
         </Tilt>
-        <motion.h1 className="font-bold text-3xl sm:text-5xl text-white text-center" style={{ opacity: 0 }} animate={{ opacity: 1, width: '100%' }} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Nav343 Welcomes You !!!</motion.h1>
+        <motion.h1 id="main_logo" className="font-bold text-3xl sm:text-5xl text-white text-center" style={{ opacity: 0 }} animate={{ opacity: 1, width: '100%' }} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Nav343 Welcomes You !!!</motion.h1>
       </div>
       <Cursor setMousePosition={setMousePosition} cursorVariant={cursorVariant} mousePosition={mousePosition} />
       <div className="wavething w-auto">
