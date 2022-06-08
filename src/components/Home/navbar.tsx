@@ -22,7 +22,8 @@ const Navbar = ({ mouseEnter, mouseLeave }: MouseMotion) => {
         <Link to='/works' className="cursor-none font-bold text-xl text-white hover:underline underline-offset-8 px-2" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>Works</Link>
         <Link to='/about' className="cursor-none font-bold text-xl text-white hover:underline hover:underline-offset-8 px-2" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>About</Link>
       </div>
-    </div>)
+    </div>
+  )
 }
 
 export default Navbar 
