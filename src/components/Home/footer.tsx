@@ -1,4 +1,4 @@
-import Logo from '../../assets/icon.png'
+import Logo from '../../assets/icon2.png'
 import { FaCopyright, FaFacebook, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa'
 import MouseMotion2 from '../../types/MouseMotion2'
 

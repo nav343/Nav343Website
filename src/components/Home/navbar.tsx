@@ -1,4 +1,4 @@
-import Logo from '../../assets/icon.png'
+import Logo from '../../assets/icon2.png'
 import { Link } from 'react-router-dom'
 import MouseMotion from '../../types/MouseMotion'
 

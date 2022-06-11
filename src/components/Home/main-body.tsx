@@ -1,7 +1,7 @@
 import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 import Cursor from '../All/cursor'
-import Logo from '../../assets/icon.png'
+import Logo from '../../assets/icon2.png'
 import AMixType from '../../types/AMixType'
 
 export default function MainBody({ setMousePosition, cursorVariant, mousePosition, mouseEnter, mouseLeave }: AMixType) {
@@ -20,7 +20,5 @@ export default function MainBody({ setMousePosition, cursorVariant, mousePositio
         </svg>
       </div>
     </div>
-
-
   )
 }
