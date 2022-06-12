@@ -20,9 +20,9 @@ export default function Error() {
   return (
     <>
       <motion.div className='w-screen h-screen bg-gray-900 flex items-center justify-center flex-col' onClick={mouseClick} onDoubleClick={mouseLeave} initial={{ rotate: 0 }} animate={{ rotate: 360 }} exit={{ rotate: 0 }}>
-        <img src={NotFound} className="w-48 h-48" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} />
+        <img alt="404 Not Found" src={NotFound} className="w-48 h-48" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} />
         <Cursor setMousePosition={setMousePosition} cursorVariant={cursorVariant} mousePosition={mousePosition} />
-        <h1 className="text-white text-5xl font-bold" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>404 Not Found</h1>
+        <h1 id="main_logo" className="text-white text-5xl font-bold" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>404 Not Found</h1>
         <Link to="/" className='text-white text-2xl hover:bg-white hover:text-gray-900 font-bold mt-5 p-5 hover:rounded-3xl rounded-lg ease-in-out duration-300'>Back to Home</Link>
       </motion.div>
     </>

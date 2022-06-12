@@ -14,7 +14,7 @@ export default function About() {
 
   const [cursorVariant, setCursorVariant] = useState("default");
   const mouseEnter = () => setCursorVariant("text");
-  const mouseClick = () => setCursorVariant("text");
+  const mouseClick = () => { setCursorVariant("text"); setTimeout(mouseLeave, 100) };
   const mouseLeave = () => setCursorVariant("default");
 
 

@@ -22,7 +22,7 @@ export default function ToolsAndLangs({ mouseEnter, mouseLeave }: MouseMotion2) 
       <div className="flex flex-col sm:flex-row my-10" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
         {tools_data1.map((thing, index) => (
           <div className="bg-white w-40 h-40 rounded-full flex justify-center flex-col items-center my-2 sm:my-0 sm:mx-2 animate-pulse" key={index}>
-            <img src={thing.imgurl} className="w-16 h-16" />
+            <img src={thing.imgurl} className="w-16 h-16" alt="Tools and Languages" />
             <h1 className="font-bold text-xl">{thing.lang}</h1>
           </div>
         ))}
@@ -30,7 +30,7 @@ export default function ToolsAndLangs({ mouseEnter, mouseLeave }: MouseMotion2) 
       <div className="flex flex-col sm:flex-row" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
         {tools_data2.map((thing, index) => (
           <div className="bg-white w-40 h-40 rounded-full flex justify-center flex-col items-center my-2 sm:my-0 sm:mx-2 animate-pulse" key={index}>
-            <img src={thing.imgurl} className="w-16 h-16" />
+            <img src={thing.imgurl} className="w-16 h-16" alt="Tools and Languages" />
             <h1 className="font-bold text-xl">{thing.lang}</h1>
           </div>
         ))}

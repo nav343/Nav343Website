@@ -9,7 +9,7 @@ export default function Footer({ mouseEnter, mouseLeave }: MouseMotion2) {
   return (
     <div className="flex items-center justify-evenly bg-gray-900 py-2 flex-col sm:flex-row">
       <div className="flex items-center justify-center">
-        <img src={Logo} className="w-12 h-12" />
+        <img src={Logo} className="w-12 h-12" alt="Nav343 Logo" />
         <h1 className="text-white font-bold text-xl ml-2">Nav343</h1>
       </div>
 

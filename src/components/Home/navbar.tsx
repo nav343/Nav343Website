@@ -13,7 +13,7 @@ const Navbar = ({ mouseEnter, mouseLeave }: MouseMotion) => {
   return (
     <div id="navbar" className="backdrop-blur-sm w-screen flex justify-between items-center absolute sm:fixed top-0 z-50 px-10 py-2 flex-col sm:flex-row">
       <div className="flex items-center">
-        <img loading='lazy' src={Logo} className="w-12 h-12" />
+        <img alt="Nav343 Logo" loading='lazy' src={Logo} className="w-12 h-12" />
         <h1 className="text-white font-bold text-xl ml-2">Nav343</h1>
       </div>
 
